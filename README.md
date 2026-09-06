@@ -28,6 +28,8 @@ Key problem solved: eliminating fragmented WhatsApp/Telegram groups by offering 
 
 ```mermaid
 graph TD
+    A[🌐 Vercel Global Edge CDN<br/><b>React 18 • Vite • Tailwind CSS</b>] -->|HTTPS / RESTful API| B[⚙️ Render Cloud Web Service<br/><b>Node.js • Express.js • JWT • Bcrypt</b>]
+    B -->|Connection Pooling / Prisma ORM| C[(🗄️ Neon Serverless PostgreSQL<br/><b>Relational DB • Auto-Scale</b>)]
 
 Frontend (Client Layer)
 React.js 18 (Vite): Lightweight Single Page Application (SPA) architecture.
@@ -84,5 +86,5 @@ Environment Isolation: Zero credentials leaked; all connection strings, secrets,
 Muhammed Eid — Full-Stack Software Engineer
 GitHub: @muhammed318
 Live Production Application: https://egyptian-student-union.vercel.app
-    A[🌐 Vercel Global Edge CDN<br/><b>React 18 • Vite • Tailwind CSS</b>] -->|HTTPS / RESTful API| B[⚙️ Render Cloud Web Service<br/><b>Node.js • Express.js • JWT • Bcrypt</b>]
-    B -->|Connection Pooling / Prisma ORM| C[(🗄️ Neon Serverless PostgreSQL<br/><b>Relational DB • Auto-Scale</b>)]
+
+---
